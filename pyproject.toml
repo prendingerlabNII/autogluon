@@ -49,10 +49,7 @@ ignore-words-list = 'mape,ans,2st,fo,nd,te,fpr,coo,rouge,SME,NoES'
 
 [tool.pyright]
 include = [
-    "timeseries/src/",
-    "timeseries",
-    "core",
-    "common",
+    "timeseries/src/"
 ]
 extraPaths = [
     "common/src",
@@ -60,8 +57,3 @@ extraPaths = [
     "tabular/src",
     "timeseries/src",
 ]
-
-
-[build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
