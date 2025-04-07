@@ -58,6 +58,14 @@ extraPaths = [
     "timeseries/src",
 ]
 
+
+
+[project]
+name = "autogluon"
+version = "1.0.0" 
+description = "AutoML Toolkit"
+authors = [name = "Your Name", email = "your@email.com"]
+
 [build-system]
 requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
