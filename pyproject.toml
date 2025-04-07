@@ -56,24 +56,4 @@ extraPaths = [
     "core/src",
     "tabular/src",
     "timeseries/src",
-    "features/src"
-]
-
-[project]
-name = "autogluon"
-version = "0.1.0"
-
-[build-system]
-requires = ["setuptools>=42"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-packages = [
-    "autogluon",
-    "autogluon.common",
-    "autogluon.core",
-    "autogluon.features",
-    "autogluon.tabular",
-    "autogluon.multimodal",
-    "autogluon.timeseries"
 ]
