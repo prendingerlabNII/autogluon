@@ -46,18 +46,6 @@ skip = '.git,*.pdf,*.svg,*.ipynb,*.csv,kaggle_feedback_prize'
 #
 ignore-words-list = 'mape,ans,2st,fo,nd,te,fpr,coo,rouge,SME,NoES'
 
-
-[tool.pyright]
-include = [
-    "timeseries/src/"
-]
-extraPaths = [
-    "common/src",
-    "core/src",
-    "tabular/src",
-    "timeseries/src",
-]
-
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
@@ -65,3 +53,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "autogluon"
 version = "0.1"
+
+[tool.pyright]
+include = [
+    "timeseries",
+    "core",
+    "common",
+]
