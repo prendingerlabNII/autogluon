@@ -113,7 +113,6 @@ class ChronosFineTuningDataset(IterableDataset):
     def _create_instance_splitter(self, mode: str):
         
         instance_sampler = {
-            
             # The only splitting we do is at the index of the context length because 
             # we want to have a fixed context window without padding and autogluon does 
             # not naitvely support this. Sampling from test can be used.
