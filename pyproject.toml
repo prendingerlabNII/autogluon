@@ -57,3 +57,7 @@ extraPaths = [
     "tabular/src",
     "timeseries/src",
 ]
+
+[project]
+name = "autogluon-bypass-sampling"
+version = "1.0"
