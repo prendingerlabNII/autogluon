@@ -112,9 +112,7 @@ class ChronosFineTuningDataset(IterableDataset):
 
     def _create_instance_splitter(self, mode: str):
         instance_sampler = {
-            "training": ExpectedNumInstanceSampler(
-                num_instances=1.0, min_future=self.prediction_length, min_instances=1
-            ),
+            "training": ValidationSplitSampler(min_future=self.prediction_length),
             "validation": ValidationSplitSampler(min_future=self.prediction_length),
         }[mode]
 
